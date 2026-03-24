@@ -36,6 +36,12 @@ python COMFY_MIGRATOR.py
 - Config files are searched for in `%APPDATA%\ComfyUI\`. If none are found, a warning is shown (common with portable installs).
 - The **Undo** button is only available if the original source folder was not deleted.
 
+## Support
+
+If this tool saved you some headaches, consider buying me a coffee! ☕
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FF813F?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/pksmartunew)
+
 ## License
 
 MIT License

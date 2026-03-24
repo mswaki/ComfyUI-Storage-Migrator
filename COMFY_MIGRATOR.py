@@ -5,6 +5,7 @@ import os
 import json
 import threading
 import time
+import webbrowser
 
 class ComfyMigratorApp:
     def __init__(self, root):
@@ -77,6 +78,19 @@ class ComfyMigratorApp:
 
         self.cancel_btn = tk.Button(btn_frame, text="Cancel", font=("Arial", 10), bg="#F44336", fg="white", width=10, state="disabled", command=self.cancel_migration)
         self.cancel_btn.grid(row=1, column=1, padx=5, pady=5, sticky="w")
+
+        # Buy Me a Coffee note
+        coffee_label = tk.Label(
+            self.root,
+            text="☕ Buy me a coffee",
+            fg="#888888",
+            font=("Arial", 8),
+            cursor="hand2"
+        )
+        coffee_label.pack(side="bottom", pady=(0, 6))
+        coffee_label.bind("<Button-1>", lambda e: webbrowser.open("https://buymeacoffee.com/pksmartunew"))
+        coffee_label.bind("<Enter>", lambda e: coffee_label.config(fg="#FF813F", font=("Arial", 8, "underline")))
+        coffee_label.bind("<Leave>", lambda e: coffee_label.config(fg="#888888", font=("Arial", 8)))
 
 
     def browse_source(self):
